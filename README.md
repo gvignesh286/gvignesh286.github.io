@@ -59,3 +59,99 @@ if number < 5 {
 }
 ```
 
+## Pattern Matching
+```rust
+let number = 3;
+
+match number {
+    1 => println!("One!"),
+    2 | 3 => println!("Two or three!"),
+    _ => println!("Something else!"),
+}
+
+```
+
+## Loops
+```rust
+// Infinite loop
+loop {
+    break;
+}
+
+// While loop
+let mut x = 5;
+while x > 0 {
+    println!("{x}");
+    x -= 1;
+}
+
+// For loop
+for num in 1..4 {
+    println!("{num}");
+}
+```
+
+# Functions & Closures 
+## Functions 
+```rust
+fn add(a: i32, b: i32) -> i32 {
+    a + b
+}
+
+```
+
+## Closures 
+```rust
+let multiply = |a: i32, b: i32| a * b;
+println!("{}", multiply(3, 4));
+```
+
+## Scope and Shadowing
+```rust
+fn main() {
+    let x = 5;
+    {
+        let x = x + 1;
+        println!("Inner x: {x}");
+    }
+    println!("Outer x: {x}");
+}
+```
+
+# Standard Data Structures 
+## Vectors
+```rust
+let mut v = vec![1, 2, 3];
+v.push(4);
+println!("{:?}", v);
+```
+
+## HashMap
+```rust
+use std::collections::HashMap;
+
+let mut map = HashMap::new();
+map.insert("Rust", 2015);
+map.insert("C++", 1985);
+
+```
+## Strings + Splicing
+```rust
+let s = String::from("hello");
+let greeting = &s[0..4]; // slicing
+```
+
+## Option & Result
+```
+fn divide(x: i32, y: i32) -> Option<i32> {
+    if y == 0 { None } else { Some(x / y) }
+}
+
+fn get_file() -> Result<(), std::io::Error> {
+    std::fs::File::open("file.txt")?;
+    Ok(())
+}
+```
+
+
+
