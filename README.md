@@ -13,7 +13,6 @@ Welcome to this Rust tutorial! This guide walks you through the core components 
 6. [Custom Data Types](#custom-data-types)
 7. [Unique Language Features](#language-features)
 8. [Memory Management](#memory-management)
-9. [Conclusion & Resources](#conclusion--resources)
 
 
 ---
