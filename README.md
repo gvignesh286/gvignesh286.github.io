@@ -188,8 +188,8 @@ impl User {
 }
 ```
 
-## Language Features
-# Ownership and Borrowing
+# Language Features
+## Ownership and Borrowing
 ``` rust
 fn main() {
     let s = String::from("hello");
