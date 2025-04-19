@@ -109,13 +109,13 @@ fn add(a: i32, b: i32) -> i32 {
 
 ```
 ### -this particular function adds 2 values of 32 bit value and returns the sum as a 32 bit value
-
+### Function Declaration: Functions are declared with the fn keyword and can take parameters, perform operations, and return values.
 ## Closures 
 ```rust
 let multiply = |a: i32, b: i32| a * b;
 println!("{}", multiply(3, 4));
 ```
-### -works like a mini function and has the ability to capture variables from the closest scope
+### -works like a mini function and has the ability to capture variables from the surrounding scope
 
 ## Scope and Shadowing
 ```rust
@@ -137,7 +137,7 @@ let mut v = vec![1, 2, 3];
 v.push(4);
 println!("{:?}", v);
 ```
-
+### vec<t>: A growable, heap-allocated list. can add elements by using push
 ## HashMap
 ```rust
 use std::collections::HashMap;
@@ -147,7 +147,7 @@ map.insert("Rust", 2015);
 map.insert("C++", 1985);
 
 ```
-### -Hashmap stores data in key value pairs 
+### -Hashmap stores data in key value pairs which is unique and traces back to a value
 
 ## Strings + Splicing
 ```rust
@@ -194,6 +194,7 @@ enum Direction {
 
 let move_dir = Direction::Left;
 ```
+### Enum: data type that can hold multiple related variations of information
 
 ## Methods with impl
 ``` rust
@@ -203,9 +204,11 @@ impl User {
     }
 }
 ```
+### impl: used to define methods for structs or enums
 
 # Language Features
 ## Ownership and Borrowing
+### referencing scope of a value in terms of ownership and switching scope temporarily
 ``` rust
 fn main() {
     let s = String::from("hello");
@@ -230,6 +233,7 @@ fn calculate_length(s: &String) -> usize {
     s.len()
 }
 ```
+### &: is used to allow sharing of data (doesnt take ownership)
 
 # Memory Management
 ``` rust
@@ -237,6 +241,7 @@ let b = Box::new(5);
 println!("b = {}", b);
 ``` 
 
+###Box<T>: A heap-allocated memory that allows you to store data on the heap
 
 
 
