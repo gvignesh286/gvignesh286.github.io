@@ -1,10 +1,10 @@
-# 🦀 Rust Language Tutorial
+#  Rust Language Tutorial
 
 Welcome to this Rust tutorial! This guide walks you through the core components of the Rust programming language — perfect for beginners or those coming from other languages.
 
 ---
 
-## 📌 Table of Contents
+## Table of Contents
 
 1. [Entry Point](#-entry-point)
 2. [Data Types & Operations](#-data-types--operations)
@@ -18,7 +18,7 @@ Welcome to this Rust tutorial! This guide walks you through the core components 
 
 ---
 
-## 🟢 Entry Point
+## Entry Point
 
 Rust programs start execution at the `main()` function:
 
@@ -26,3 +26,11 @@ Rust programs start execution at the `main()` function:
 fn main() {
     println!("Hello, Rust!");
 }
+```
+#    Data Types and Operations
+## Scalar Types
+
+let x: i32 = 42;
+let y: f64 = 3.14;
+let z: bool = true;
+let c: char = 'R';
