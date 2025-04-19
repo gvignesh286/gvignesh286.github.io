@@ -153,9 +153,9 @@ fn get_file() -> Result<(), std::io::Error> {
 }
 ```
 
-#Custom Data Types
+##Custom Data Types
 
-## Structs
+# Structs
 ```rust
 struct User {
     username: String,
@@ -189,8 +189,8 @@ impl User {
 }
 ```
 
-#Language Features
-## Ownership and Borrowing
+##Language Features
+# Ownership and Borrowing
 ``` rust
 fn main() {
     let s = String::from("hello");
