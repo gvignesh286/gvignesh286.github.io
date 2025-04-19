@@ -142,7 +142,7 @@ let greeting = &s[0..4]; // slicing
 ```
 
 ## Option & Result
-```
+```rust
 fn divide(x: i32, y: i32) -> Option<i32> {
     if y == 0 { None } else { Some(x / y) }
 }
@@ -152,6 +152,77 @@ fn get_file() -> Result<(), std::io::Error> {
     Ok(())
 }
 ```
+#Custom Data Types
+## Structs
+```rust
+struct User {
+    username: String,
+    age: u32,
+}
+
+let user1 = User {
+    username: String::from("Alice"),
+    age: 30,
+};
+```
+
+##Enums
+```rust
+enum Direction {
+    Up,
+    Down,
+    Left,
+    Right,
+}
+
+let move_dir = Direction::Left;
+```
+
+## Methods with impl
+``` rust
+impl User {
+    fn greet(&self) {
+        println!("Hello, {}!", self.username);
+    }
+}
+```
+
+#Language Features
+## Ownership and Borrowing
+``` rust
+fn main() {
+    let s = String::from("hello");
+    takes_ownership(s);
+    // println!("{}", s); // Error: value moved
+}
+
+fn takes_ownership(some_string: String) {
+    println!("{}", some_string);
+}
+```
+
+#References
+``` rust
+fn main() {
+    let s1 = String::from("hello");
+    let len = calculate_length(&s1);
+    println!("Length: {len}");
+}
+
+fn calculate_length(s: &String) -> usize {
+    s.len()
+}
+```
+
+# Memory Managemen
+``` rust
+let b = Box::new(5);
+println!("b = {}", b);
+``` 
+
+
+
+
 
 
 
