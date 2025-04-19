@@ -34,17 +34,24 @@ let y: f64 = 3.14;
 let z: bool = true;
 let c: char = 'R';
 ```
+### Let x is the variable of whatever type for example i32 is 32 bit integer and f64 is a float then boolean and character
+### Let (variable) : type = (assigned value)
+
 ## Compound Types
 ```rust
 let tuple: (i32, f64, u8) = (500, 6.4, 1);
 let array: [i32; 3] = [1, 2, 3];
 ```
+### Let (tuple type of however many) = (assigned values)
+
+
 ## Operations
 ```rust
 let sum = 5 + 10;
 let is_equal = 10 == 10;
 let not = !true;
 ```
+### add then checks if equal and returns answer for logic check
 
 #   Control Structures
 ## Conditionals
@@ -57,6 +64,7 @@ if number < 5 {
     println!("Five or more!");
 }
 ```
+### pythons if loop equivalent, will run as long as value is in accordance to rule that checks per repeat
 
 ## Pattern Matching
 ```rust
@@ -69,6 +77,7 @@ match number {
 }
 
 ```
+### works as if statements check validity and returns response
 
 ## Loops
 ```rust
@@ -89,6 +98,7 @@ for num in 1..4 {
     println!("{num}");
 }
 ```
+### different types of loops
 
 # Functions & Closures 
 ## Functions 
@@ -98,12 +108,14 @@ fn add(a: i32, b: i32) -> i32 {
 }
 
 ```
+### this particular function adds 2 values of 32 bit value and returns the sum as a 32 bit value
 
 ## Closures 
 ```rust
 let multiply = |a: i32, b: i32| a * b;
 println!("{}", multiply(3, 4));
 ```
+### works like a mini function and has the ability to capture variables from the closest scope
 
 ## Scope and Shadowing
 ```rust
@@ -116,6 +128,7 @@ fn main() {
     println!("Outer x: {x}");
 }
 ```
+### the second line shadows the x value assignment but is still in scope for the rust language
 
 # Standard Data Structures 
 ## Vectors
@@ -134,11 +147,14 @@ map.insert("Rust", 2015);
 map.insert("C++", 1985);
 
 ```
+### Hashmap stores data in key value pairs 
+
 ## Strings + Splicing
 ```rust
 let s = String::from("hello");
 let greeting = &s[0..4]; // slicing
 ```
+### string is printed and is split by characters in word
 
 ## Option & Result
 ```rust
@@ -151,6 +167,7 @@ fn get_file() -> Result<(), std::io::Error> {
     Ok(())
 }
 ```
+### this can be used for error handling 
 
 # Custom Data Types
 ## Structs
