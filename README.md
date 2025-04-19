@@ -35,3 +35,27 @@ let y: f64 = 3.14;
 let z: bool = true;
 let c: char = 'R';
 ```
+## Compound Types
+```rust
+let tuple: (i32, f64, u8) = (500, 6.4, 1);
+let array: [i32; 3] = [1, 2, 3];
+```
+## Operations
+```rust
+let sum = 5 + 10;
+let is_equal = 10 == 10;
+let not = !true;
+```
+
+#   Control Structures
+## Conditionals
+```rust
+let number = 7;
+
+if number < 5 {
+    println!("Less than five!");
+} else {
+    println!("Five or more!");
+}
+```
+
