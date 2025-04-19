@@ -153,9 +153,8 @@ fn get_file() -> Result<(), std::io::Error> {
 }
 ```
 
-##Custom Data Types
-
-# Structs
+# Custom Data Types
+## Structs
 ```rust
 struct User {
     username: String,
@@ -168,7 +167,7 @@ let user1 = User {
 };
 ```
 
-##Enums
+## Enums
 ```rust
 enum Direction {
     Up,
@@ -189,7 +188,7 @@ impl User {
 }
 ```
 
-##Language Features
+## Language Features
 # Ownership and Borrowing
 ``` rust
 fn main() {
@@ -203,7 +202,7 @@ fn takes_ownership(some_string: String) {
 }
 ```
 
-#References
+# References
 ``` rust
 fn main() {
     let s1 = String::from("hello");
