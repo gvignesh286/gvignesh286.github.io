@@ -152,7 +152,9 @@ fn get_file() -> Result<(), std::io::Error> {
     Ok(())
 }
 ```
+
 #Custom Data Types
+
 ## Structs
 ```rust
 struct User {
