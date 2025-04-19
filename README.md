@@ -27,10 +27,11 @@ fn main() {
     println!("Hello, Rust!");
 }
 ```
-#    Data Types and Operations
+#    Data Types & Operations
 ## Scalar Types
-
+```rust
 let x: i32 = 42;
 let y: f64 = 3.14;
 let z: bool = true;
 let c: char = 'R';
+```
