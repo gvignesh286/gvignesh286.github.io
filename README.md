@@ -11,7 +11,7 @@ Welcome to this Rust tutorial! This guide walks you through the core components 
 4. [Functions & Closures](#functions--closures)
 5. [Standard Data Structures](#standard-data-structures)
 6. [Custom Data Types](#custom-data-types)
-7. [Unique Language Features](#unique-language-features)
+7. [Unique Language Features](#language-features)
 8. [Memory Management](#memory-management)
 9. [Conclusion & Resources](#conclusion--resources)
 
@@ -215,7 +215,7 @@ fn calculate_length(s: &String) -> usize {
 }
 ```
 
-# Memory Managemen
+# Memory Management
 ``` rust
 let b = Box::new(5);
 println!("b = {}", b);
